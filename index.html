@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — Crystalbeds Africa App</title>
+<style>
+  :root{
+    --bg: #FBF8F3;
+    --paper: #FFFFFF;
+    --ink: #1F2421;
+    --ink-soft: #5B5650;
+    --clay: #C1652F;
+    --clay-soft: #F3E2D5;
+    --sage: #7C8C72;
+    --line: #E5DDD0;
+  }
+
+  *{ box-sizing: border-box; }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+
+  html, body{
+    margin:0; padding:0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+
+  body{
+    line-height: 1.7;
+  }
+
+  a{ color: var(--clay); }
+  a:focus-visible, button:focus-visible{
+    outline: 2px solid var(--clay);
+    outline-offset: 3px;
+  }
+
+  /* ---------- Top mark ---------- */
+  .crest{
+    width: 38px; height: 38px;
+    display: block;
+  }
+
+  /* ---------- Header ---------- */
+  header.hero{
+    position: relative;
+    padding: 72px 24px 56px;
+    text-align: center;
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+  }
+  header.hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      radial-gradient(600px 300px at 50% -10%, var(--clay-soft) 0%, transparent 70%);
+    z-index:0;
+  }
+  .hero-inner{ position:relative; z-index:1; max-width: 720px; margin: 0 auto; }
+  .hero .crest{ margin: 0 auto 22px; }
+  header.hero .eyebrow{
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 12.5px;
+    color: var(--sage);
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  header.hero h1{
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Source Serif Pro", serif;
+    font-size: clamp(32px, 5vw, 46px);
+    font-weight: 600;
+    margin: 0 0 14px;
+    letter-spacing: -0.01em;
+  }
+  header.hero p.lede{
+    color: var(--ink-soft);
+    font-size: 16.5px;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  header.hero .meta{
+    margin-top: 26px;
+    display:inline-flex;
+    gap: 10px;
+    align-items:center;
+    font-size: 13px;
+    color: var(--ink-soft);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 7px 16px;
+    border-radius: 100px;
+  }
+  header.hero .meta .dot{
+    width:6px; height:6px; border-radius:50%;
+    background: var(--clay);
+    display:inline-block;
+  }
+
+  /* ---------- Layout ---------- */
+  .layout{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 56px 24px 100px;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 56px;
+    align-items: start;
+  }
+
+  nav.toc{
+    position: sticky;
+    top: 32px;
+  }
+  nav.toc .toc-label{
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--sage);
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  nav.toc ol{
+    list-style: none;
+    margin: 0; padding: 0;
+    border-left: 1px solid var(--line);
+  }
+  nav.toc li{ margin: 0; }
+  nav.toc a{
+    display:block;
+    padding: 8px 0 8px 16px;
+    margin-left: -1px;
+    border-left: 2px solid transparent;
+    text-decoration:none;
+    color: var(--ink-soft);
+    font-size: 14px;
+    transition: color .15s, border-color .15s;
+  }
+  nav.toc a:hover, nav.toc a:focus-visible{
+    color: var(--ink);
+    border-left-color: var(--clay);
+  }
+
+  main{ min-width: 0; }
+
+  .intro-card{
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 26px 28px;
+    margin-bottom: 44px;
+    font-size: 15.5px;
+    color: var(--ink-soft);
+  }
+  .intro-card strong{ color: var(--ink); }
+
+  section.policy-section{
+    padding: 36px 0;
+    border-bottom: 1px solid var(--line);
+    scroll-margin-top: 24px;
+  }
+  section.policy-section:last-of-type{ border-bottom: none; }
+
+  .section-head{
+    display:flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 18px;
+  }
+  .section-mark{
+    flex: none;
+    width: 34px; height: 34px;
+  }
+  h2{
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Source Serif Pro", serif;
+    font-size: 23px;
+    font-weight: 600;
+    margin: 2px 0 0;
+    letter-spacing: -0.005em;
+  }
+
+  h3{
+    font-size: 14.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--clay);
+    font-weight: 700;
+    margin: 22px 0 8px;
+  }
+
+  p{ margin: 10px 0; color: var(--ink); }
+  section.policy-section > .section-body p:first-of-type{ margin-top:0; }
+
+  ul.policy-list{
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  ul.policy-list li{
+    position: relative;
+    padding-left: 22px;
+    margin: 9px 0;
+    color: var(--ink);
+  }
+  ul.policy-list li::before{
+    content:"";
+    position:absolute;
+    left:0; top: 9px;
+    width: 7px; height: 7px;
+    background: var(--clay-soft);
+    border: 1.5px solid var(--clay);
+    border-radius: 2px;
+    transform: rotate(45deg);
+  }
+
+  .pill-row{
+    display:flex; flex-wrap:wrap; gap:10px;
+    margin: 14px 0 4px;
+  }
+  .pill{
+    background: var(--clay-soft);
+    color: #8C4116;
+    border: 1px solid #E6C6AC;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 100px;
+  }
+
+  .note-box{
+    background: #F4F6F1;
+    border: 1px solid #DDE3D6;
+    border-left: 3px solid var(--sage);
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-size: 14.5px;
+    color: #4A5443;
+    margin-top: 16px;
+  }
+
+  .contact-card{
+    background: var(--ink);
+    color: #F2EEE6;
+    border-radius: 16px;
+    padding: 32px 30px;
+    margin-top: 8px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .contact-card .crest{ filter: invert(1); opacity: .9; }
+  .contact-card h2{ color: #F2EEE6; font-size: 21px; margin-bottom: 4px;}
+  .contact-card p{ color: #C9C2B5; margin: 0; font-size: 14.5px; }
+  .contact-card a.email-link{
+    color: #F2EEE6;
+    background: var(--clay);
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 14.5px;
+    white-space: nowrap;
+    transition: opacity .15s;
+  }
+  .contact-card a.email-link:hover{ opacity:.88; }
+
+  footer.page-footer{
+    text-align:center;
+    padding: 40px 24px 56px;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  footer.page-footer .crest-mini{
+    width: 20px; height: 20px;
+    margin: 0 auto 10px;
+    opacity: .55;
+  }
+
+  @media (max-width: 760px){
+    .layout{ grid-template-columns: 1fr; gap: 28px; padding-top: 36px; }
+    nav.toc{ position: static; }
+    nav.toc ol{
+      display:flex; flex-wrap:wrap; gap: 4px 0;
+      border-left:none; border-top: 1px solid var(--line);
+      padding-top: 10px;
+    }
+    nav.toc a{
+      border-left:none;
+      padding: 6px 12px;
+      border-radius: 100px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      margin: 4px 6px 4px 0;
+    }
+    nav.toc a:hover{ border-color: var(--clay); }
+    header.hero{ padding: 56px 20px 44px; }
+    .contact-card{ flex-direction: column; align-items: flex-start; text-align:left; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <svg class="crest" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M24 40C24 40 8 30.5 8 18.5C8 12.7 12.5 8 18 8C20.6 8 23 9.2 24 11.2C25 9.2 27.4 8 30 8C35.5 8 40 12.7 40 18.5C40 30.5 24 40 24 40Z" stroke="#C1652F" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M24 11.2V40" stroke="#C1652F" stroke-width="1.4" stroke-dasharray="1 3.2" stroke-linecap="round"/>
+    </svg>
+    <p class="eyebrow">Akoma App</p>
+    <h1>Privacy Policy</h1>
+    <p class="lede">A plain account of what we collect, why we collect it, and the choices you have over your information.</p>
+    <div class="meta"><span class="dot"></span> Effective 17 June 2026</div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <nav class="toc" aria-label="Table of contents">
+    <p class="toc-label">On this page</p>
+    <ol>
+      <li><a href="#information-we-collect">1. Information we collect</a></li>
+      <li><a href="#how-we-use">2. How we use it</a></li>
+      <li><a href="#third-party">3. Third-party services</a></li>
+      <li><a href="#data-sharing">4. Data sharing</a></li>
+      <li><a href="#data-security">5. Data security</a></li>
+      <li><a href="#childrens-privacy">6. Children's privacy</a></li>
+      <li><a href="#your-rights">7. Your rights</a></li>
+      <li><a href="#changes">8. Changes to this policy</a></li>
+      <li><a href="#contact">9. Contact us</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <div class="intro-card">
+      <strong>Crystalbeds Africa App</strong> ("we," "our," or "us") respects your privacy and is committed to protecting any personal information you share while using our mobile application. This policy explains what that information is, how it's handled, and what control you have over it.
+    </div>
+
+    <section class="policy-section" id="information-we-collect">
+      <div class="section-head">
+        <svg class="section-mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="17" cy="17" r="15" stroke="#E5DDD0" stroke-width="1.5"/>
+          <path d="M17 24C17 24 9 19.2 9 12.8C9 9.6 11.5 7 14.5 7C15.8 7 17 7.6 17 8.7C17 7.6 18.2 7 19.5 7C22.5 7 25 9.6 25 12.8C25 19.2 17 24 17 24Z" fill="#C1652F"/>
+        </svg>
+        <h2>Information we collect</h2>
+      </div>
+      <div class="section-body">
+        <h3>Personal information</h3>
+        <ul class="policy-list">
+          <li>Name (if provided)</li>
+          <li>Email address (if you sign in or contact us)</li>
+        </ul>
+
+        <h3>Device information</h3>
+        <ul class="policy-list">
+          <li>Device model</li>
+          <li>Operating system version</li>
+          <li>App version</li>
+          <li>Unique device identifiers</li>
+        </ul>
+
+        <h3>Usage data</h3>
+        <ul class="policy-list">
+          <li>Screens visited</li>
+          <li>Features used</li>
+          <li>Crash reports and performance data</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="policy-section" id="how-we-use">
+      <div class="section-head">
+        <svg class="section-mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="17" cy="17" r="15" stroke="#E5DDD0" stroke-width="1.5"/>
+          <path d="M17 24C17 24 9 19.2 9 12.8C9 9.6 11.5 7 14.5 7C15.8 7 17 7.6 17 8.7C17 7.6 18.2 7 19.5 7C22.5 7 25 9.6 25 12.8C25 19.2 17 24 17 24Z" fill="#C1652F"/>
+        </svg>
+        <h2>How we use your information</h2>
+      </div>
+      <div class="section-body">
+        <p>We use the information described above to:</p>
+        <ul class="policy-list">
+          <li>Provide and improve app functionality</li>
+          <li>Fix bugs and improve performance</li>
+          <li>Send important updates or notifications</li>
+          <li>Enhance your overall experience with the app</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="policy-section" id="third-party">
+      <div class="section-head">
+        <svg class="section-mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="17" cy="17" r="15" stroke="#E5DDD0" stroke-width="1.5"/>
+          <path d="M17 24C17 24 9 19.2 9 12.8C9 9.6 11.5 7 14.5 7C15.8 7 17 7.6 17 8.7C17 7.6 18.2 7 19.5 7C22.5 7 25 9.6 25 12.8C25 19.2 17 24 17 24Z" fill="#C1652F"/>
+        </svg>
+        <h2>Third-party services</h2>
+      </div>
+      <div class="section-body">
+        <p>Crystalbeds Africa App may rely on a small number of trusted third-party services to operate reliably:</p>
+        <div class="pill-row">
+          <span class="pill">Google Play Services</span>
+          <span class="pill">Firebase Analytics</span>
+          <span class="pill">Firebase Crashlytics</span>
+        </div>
+        <div class="note-box">Each of these services has its own privacy policy governing how it handles data — we encourage you to review them.</div>
+      </div>
+    </section>
+
+    <section class="policy-section" id="data-sharing">
+      <div class="section-head">
+        <svg class="section-mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="17" cy="17" r="15" stroke="#E5DDD0" stroke-width="1.5"/>
+          <path d="M17 24C17 24 9 19.2 9 12.8C9 9.6 11.5 7 14.5 7C15.8 7 17 7.6 17 8.7C17 7.6 18.2 7 19.5 7C22.5 7 25 9.6 25 12.8C25 19.2 17 24 17 24Z" fill="#C1652F"/>
+        </svg>
+        <h2>Data sharing</h2>
+      </div>
+      <div class="section-body">
+        <ul class="policy-list">
+          <li>We do not sell or rent your personal data</li>
+          <li>We may share data if required by law</li>
+          <li>We may use trusted third-party services for app functionality</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="policy-section" id="data-security">
+      <div class="section-head">
+        <svg class="section-mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="17" cy="17" r="15" stroke="#E5DDD0" stroke-width="1.5"/>
+          <path d="M17 24C17 24 9 19.2 9 12.8C9 9.6 11.5 7 14.5 7C15.8 7 17 7.6 17 8.7C17 7.6 18.2 7 19.5 7C22.5 7 25 9.6 25 12.8C25 19.2 17 24 17 24Z" fill="#C1652F"/>
+        </svg>
+        <h2>Data security</h2>
+      </div>
+      <div class="section-body">
+        <p>We take appropriate security measures to protect your data. However, no method of transmission over the internet is ever 100% secure, and we cannot guarantee absolute security.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="childrens-privacy">
+      <div class="section-head">
+        <svg class="section-mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="17" cy="17" r="15" stroke="#E5DDD0" stroke-width="1.5"/>
+          <path d="M17 24C17 24 9 19.2 9 12.8C9 9.6 11.5 7 14.5 7C15.8 7 17 7.6 17 8.7C17 7.6 18.2 7 19.5 7C22.5 7 25 9.6 25 12.8C25 19.2 17 24 17 24Z" fill="#C1652F"/>
+        </svg>
+        <h2>Children's privacy</h2>
+      </div>
+      <div class="section-body">
+        <p>Crystalbeds Africa App does not knowingly collect personal data from children under the age of 13. If you believe a child has provided us with personal information, please contact us so we can remove it.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="your-rights">
+      <div class="section-head">
+        <svg class="section-mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="17" cy="17" r="15" stroke="#E5DDD0" stroke-width="1.5"/>
+          <path d="M17 24C17 24 9 19.2 9 12.8C9 9.6 11.5 7 14.5 7C15.8 7 17 7.6 17 8.7C17 7.6 18.2 7 19.5 7C22.5 7 25 9.6 25 12.8C25 19.2 17 24 17 24Z" fill="#C1652F"/>
+        </svg>
+        <h2>Your rights</h2>
+      </div>
+      <div class="section-body">
+        <p>You have control over your information. You can:</p>
+        <ul class="policy-list">
+          <li>Request access to your data</li>
+          <li>Request correction or deletion of your data</li>
+          <li>Opt out of certain data collection features</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="policy-section" id="changes">
+      <div class="section-head">
+        <svg class="section-mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="17" cy="17" r="15" stroke="#E5DDD0" stroke-width="1.5"/>
+          <path d="M17 24C17 24 9 19.2 9 12.8C9 9.6 11.5 7 14.5 7C15.8 7 17 7.6 17 8.7C17 7.6 18.2 7 19.5 7C22.5 7 25 9.6 25 12.8C25 19.2 17 24 17 24Z" fill="#C1652F"/>
+        </svg>
+        <h2>Changes to this policy</h2>
+      </div>
+      <div class="section-body">
+        <p>We may update this Privacy Policy from time to time. Any updates will be posted on this page along with a revised effective date.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="contact" style="border-bottom:none;">
+      <div class="contact-card">
+        <div>
+          <h2>Questions about this policy?</h2>
+          <p>Reach out and we'll get back to you — Crystalbeds Africa App</p>
+        </div>
+        <a class="email-link" href="mailto:info@akoma.africa">info@akoma.africa</a>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="page-footer">
+  <svg class="crest-mini" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M24 40C24 40 8 30.5 8 18.5C8 12.7 12.5 8 18 8C20.6 8 23 9.2 24 11.2C25 9.2 27.4 8 30 8C35.5 8 40 12.7 40 18.5C40 30.5 24 40 24 40Z" stroke="#1F2421" stroke-width="2.5" stroke-linejoin="round"/>
+  </svg>
+  <span id="year-line">© Crystalbeds Africa App. All rights reserved.</span>
+  <script>
+    document.getElementById("year-line").textContent = "© " + new Date().getFullYear() + " Crystalbeds Africa App. All rights reserved.";
+  </script>
+</footer>
+
+</body>
+</html>
